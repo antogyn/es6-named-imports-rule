@@ -1,0 +1,29 @@
+{
+  "name": "es6mock-test",
+  "version": "1.0.0",
+  "author": "@aginiers",
+  "description": "",
+  "scripts": {
+    "test": "mocha app/**/*.test.js app_star/**/*.test.js  --compilers js:babel-core/register",
+    "transpile": "babel app/* app_star/* --out-dir transpiled",
+    "webpack": "webpack && STAR=yes webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antogyn/es6-named-imports-rule.git"
+  },
+  "dependencies": {
+    "babel-register": "6.4.3"
+  },
+  "devDependencies": {
+    "babel-cli": "6.6.4",
+    "babel-core": "6.4.5",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-es2015-native-modules": "6.5.0",
+    "chai": "3.4.0",
+    "mocha": "2.3.3",
+    "sinon": "1.17.2",
+    "webpack": "git+https://github.com/webpack/webpack.git"
+  }
+}

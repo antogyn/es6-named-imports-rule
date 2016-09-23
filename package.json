@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha app/**/*.test.js app_star/**/*.test.js  --compilers js:babel-core/register",
     "transpile": "babel app/* app_star/* --out-dir transpiled",
-    "webpack": "webpack && STAR=yes webpack"
+    "webpack": "STAR= webpack && STAR=yes webpack",
+    "webpack:prod": "STAR= webpack -p && STAR=yes webpack -p"
   },
   "repository": {
     "type": "git",

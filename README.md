@@ -35,4 +35,4 @@ In app_star.js :
 
 With the named import, Webpack is able to understand that the `minus` method is never used.
 
-If you run `npm run webpack -- -p`, the bundles will be minified; and `app.js` won't contain the `minus` method !
+If you run `npm run webpack:prod`, the bundles will be minified; and `app.js` won't contain the `minus` method !
